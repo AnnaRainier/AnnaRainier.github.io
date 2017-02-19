@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Resume</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="flexboxgrid.css">
+	<link rel="stylesheet" href="style.css">
+		<!-- iconj.com favicon code -->
+<link rel="shortcut icon" href="http://www.iconj.com/icon.php?pid=1idgst8ijt" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.iconj.com/gif_icon.php?pid=1idgst8ijt" type="image/gif" />
+
+<!-- end of iconj.com favicon code -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript">
+ $(document).ready(function(){
+    $("#header-menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+</head>
+<body>
+<div class="my-flex-container">
+	<div class="row header">
+		<div class="col-xs-12 center-xs">
+			<ul id="header-menu" class="header-nav">
+				<li class="dropdown-menu-top">
+					<a href="#about_me" class="dropdown-menu-top">About me &#9829;</a>
+						<ul class="dropdown-menu-inside">
+							<li><a href="#bio-anchor">Bio</a></li>
+							<li><a href="#else-anchor">Something else</a></li>
+						</ul>
+				</li>
+				<li><a href="#skills_anchor">Skills</a></li>
+				<li><a href="#portf">Portfolio</a></li>
+				<li><a href="#contact_me">Contacts</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="inner-wrp-1">
+		<div class="inner-wrap">
+			<div class="row about-me">
+				<div class="col-xs-12 center-xs">
+					<div class="about-me-content center-xs">
+						<img class="photo" src="me1.jpg" alt="">
+						<h1 id="about_me" class="about-me-title">Hi, I'm Anna Khrystiuk!</h1>
+						<div class="row center-md">
+							<div class="col-xs-12 col-md-3">
+								<h3 id="bio-anchor">Bio</h3>
+								<table class="bio-table">
+									<tr>
+										<th>Born</th>
+										<td>11.12.1992</td>
+									</tr>
+									<tr>
+										<th>Zodiac sign</th>
+										<td>Saggitarius</td>
+									</tr>
+									<tr>
+										<th>City</th>
+										<td>Dnipropetrovsk</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<h3 id="else-anchor">Something else</h3>
+						<p>I'm a beginner front end developer, involved in sphere of development for 3 months, but really love it. Have skills in HTML, CSS, SASS, PSD. I intend to learn JavaScript in the nearest future (it's already on my schedule). Currently work at PrivatBank, on my leisure I like to travel, learn languages and do sports.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<article>
+		<div class="inner-wrap-for-skills">
+				<div class="row skills-title">
+					<div class="col-xs-12 center-xs">
+						<h1 id="skills_anchor" class="skills-head">My skills</h1>
+					</div>
+				</div>
+			<div class="row skills">
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg4 center-xs center-sm center-md">
+							<h4>HTML</h4>
+								<div class="progress-bar shine">
+									<span class="inside-progress-bar-1 stripes"></span>
+								</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg4 center-xs center-sm center-md">
+							<h4>CSS</h4>
+								<div class="progress-bar shine">
+									<span class="inside-progress-bar-2"></span>
+								</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg4 center-xs center-sm center-md">
+							<h4>PSD</h4>
+								<div class="progress-bar shine">
+									<span class="inside-progress-bar-3"></span>
+								</div>
+						</div>
+			</div>
+		</div>
+		</article>
+	<div class="inner-wrp-1">
+		<div class="inner-wrap">
+			<div class="row portfolio center-xs center-sm center-md center-lg">
+				<div class="col-xs-10">
+					<h1 id="portf">My works</h1>
+					<div class="fotorama foto-style" data-width="100%" data-ratio="800/600" data-minwidth="200" data-nav="thumbs" data-maxheight="100%" data-allowfullscreen="true" data-loop="true" data-fit="scaledown" data-autoplay="3000">
+						  <img src="blog-collage.jpg">
+						  <img src="elena-collage.jpg">
+						  <img src="3.jpg">
+						  <img src="4.jpg">
+						  <img src="5.jpg">
+						  <img src="puma-collage.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="row contacts center-xs center-sm center-md center-lg">
+				<div class="col-xs-12 common-input">
+						<h1 id="contact_me">Contact me</h1>
+						<div class="row forms center-xs">
+							<div class="col-xs-12 col-md-2">
+								<input type="text" placeholder="Name" class="name">
+							</div>
+							<div class="col-xs-12 col-md-2">
+								<input type="text" placeholder="Email" class="email">
+							</div>
+							
+						</div>
+					<div class="row center-xs center-sm center-md center-lg">
+						<div class="lastinput col-xs-12 col-md-4">
+							<input type="text" placeholder="Your Message" class="cominput">
+						</div>
+					</div>
+					<div class="row center-xs center-sm center-md center-lg">
+						<div class="button col-xs-12 col-md-4">
+							<input type="checkbox" id="pop-logic" class="pop-up-button">
+								<div class="pop-wrapper">
+									<div class="pop-content">
+										<label for="pop-logic"></label>
+										<div class="thank-you">
+											<p>Thank you for your message</p>
+											<div class="thank-button">
+												<label for="pop-logic" class="thank-but"><span class="thank-text">Ok</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							<label for="pop-logic" class="send">Send</label>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="row contact-me">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg4 center-xs center-sm center-md">
+					<a href="#">
+						<img src="cell.png" class="cell">
+						<span class="cell-number">063-824-34-11</span>
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg4 center-xs center-sm center-md">
+					<a href="#">
+						<img src="email.ico" class="mail-pic">
+						<span class="email-content">annarainier11@gmail.com</span>
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg4 center-xs center-sm center-md">
+					<a href="">
+						<img src="skype-icon.png" class="mail-pic">
+						<span class="email-content">anna_khrystiuk</span>
+					</a>
+				</div>
+			</div>
+		<!--<div class="row contact-info">
+			
+		</div>!-->
+		</div>
+	</div>
+			<div class="row social-contacts">
+				<div class="col-xs-12 center-xs">
+					<h1>Find me in social networks</h1>
+				</div>
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg4 center-xs center-sm center-md">
+								<a href="" class="social-item twi"></a>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg4 center-xs center-sm center-md">
+								<a href="" class="social-item fb"></a>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg4 center-xs center-sm center-md">
+								<a href="" class="social-item git"></a>
+						</div>
+						<div class="signature col-xs-12 center-xs">
+							<p>Anna Khrystiuk, 2017</p>
+						</div>
+				</div>
+			</div>
+		
+	</div>
+</body>
+</html>
