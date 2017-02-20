@@ -552,10 +552,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aa7', end
 @media (max-width: 1000px) 
 
 {
-	article
-	{
-		max-height: 30rem;
-	}
 	.header 
 	{
 		max-height: 16.5rem;
